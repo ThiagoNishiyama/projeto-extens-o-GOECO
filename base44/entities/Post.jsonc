@@ -1,0 +1,71 @@
+{
+  "name": "Post",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "description": "Post text content"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional image URL"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_email": {
+      "type": "string"
+    },
+    "author_avatar": {
+      "type": "string"
+    },
+    "author_level": {
+      "type": "string",
+      "enum": [
+        "Bronze",
+        "Prata",
+        "Ouro",
+        "Platina",
+        "Eco Master"
+      ],
+      "default": "Bronze"
+    },
+    "likes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Array of user emails who liked"
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0
+    },
+    "comments_count": {
+      "type": "number",
+      "default": 0
+    },
+    "waste_kg": {
+      "type": "number",
+      "description": "Kg of waste recycled"
+    },
+    "waste_type": {
+      "type": "string",
+      "description": "Type of waste recycled"
+    },
+    "eco_point_name": {
+      "type": "string",
+      "description": "Name of the ecopoint visited"
+    },
+    "achievement": {
+      "type": "string",
+      "description": "Achievement unlocked"
+    }
+  },
+  "required": [
+    "content",
+    "author_name",
+    "author_email"
+  ]
+}

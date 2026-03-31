@@ -1,0 +1,45 @@
+{
+  "name": "Challenge",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "points_reward": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "semanal",
+        "mensal",
+        "especial"
+      ],
+      "default": "semanal"
+    },
+    "goal": {
+      "type": "number",
+      "description": "Target number to complete"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "points_reward",
+    "goal"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "RewardItem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "points_cost": {
+      "type": "number"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Cupom",
+        "Desconto",
+        "Produto",
+        "Experi\u00eancia"
+      ]
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "stock": {
+      "type": "number",
+      "default": 100
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "points_cost"
+  ]
+}

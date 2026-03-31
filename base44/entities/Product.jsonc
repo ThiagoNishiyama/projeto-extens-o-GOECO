@@ -1,0 +1,78 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "material_type": {
+      "type": "string",
+      "enum": [
+        "Celulares",
+        "Computadores",
+        "Baterias",
+        "Cabos",
+        "Placas",
+        "Monitores",
+        "Perif\u00e9ricos",
+        "Outros"
+      ]
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "gramas",
+        "kg",
+        "toneladas",
+        "unidades"
+      ],
+      "default": "kg"
+    },
+    "price": {
+      "type": "number"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "seller_name": {
+      "type": "string"
+    },
+    "seller_email": {
+      "type": "string"
+    },
+    "seller_type": {
+      "type": "string",
+      "enum": [
+        "Pessoa F\u00edsica",
+        "Empresa"
+      ],
+      "default": "Pessoa F\u00edsica"
+    },
+    "location": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Dispon\u00edvel",
+        "Negociando",
+        "Vendido"
+      ],
+      "default": "Dispon\u00edvel"
+    }
+  },
+  "required": [
+    "title",
+    "material_type",
+    "quantity",
+    "price",
+    "seller_name",
+    "seller_email"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o/sobre o usu\u00e1rio"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "URL da foto de perfil"
+    },
+    "banner_url": {
+      "type": "string",
+      "description": "URL do banner do perfil"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Nome de exibi\u00e7\u00e3o personalizado"
+    },
+    "points": {
+      "type": "number",
+      "default": 0
+    },
+    "total_discards": {
+      "type": "number",
+      "default": 0
+    },
+    "total_weight_kg": {
+      "type": "number",
+      "default": 0
+    },
+    "co2_saved_kg": {
+      "type": "number",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "EcoPoint",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "occupancy_level": {
+      "type": "number",
+      "default": 0,
+      "description": "0-100 percentage"
+    },
+    "accepted_materials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "address",
+    "latitude",
+    "longitude"
+  ]
+}
